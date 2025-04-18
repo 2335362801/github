@@ -211,7 +211,7 @@
                 // 分支或commit文件
                 const match = inputUrl.match(/github\.com\/([^\/]+)\/([^\/]+)\/blob\/([^\/]+)\/(.+)/);
                 if (match) {
-                    downloadUrl = `https://gh-proxy.ygxz.in/https://github.com/${match[1]}/${match[2]}${match[3]}/${match[4]}`;
+                    downloadUrl = `https://cdn.jsdelivr.net/gh/${match[1]}/${match[2]}@${match[3]}/${match[4]}`;
                 }
             } else if (inputUrl.includes('gist.githubusercontent.com')) {
                 // gist文件
